@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="logotab.png" type="image/png">
+        <title>Kaji PC</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel = "stylesheet" href = "computer.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div id="nav-div">
+            <ul>
+                <div id="logo-div">
+                    <a href="index.html"><img src="KAJI.png" alt="Logo" height="100" width="100"></a>
+                </div>
+                <li><a class="active" href="store.html">Store</a></li>
+                <li><a href="computer.html">PC</a></li>
+                <li><a href="console.html">Console</a></li>
+                <li><a href="peripherals.html">Peripherals</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="dropdown">
+                    <a href="#account" class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="login.html">Profile</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="login.html">Log In</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+    
+            <div class="sidebar" id="mySidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+                <a class="active" href="#home">MENU</a>
+                <a href="index.html">Home</a>
+                <a href="computer.html">PC</a>
+                <a href="console.html">Console</a>
+                <a href="peripherals.html">Peripherals</a>
+                <a href="services.html">Services</a>
+                <a href="support.html">Support</a>
+                <a href="about.html">About</a>
+            </div>
+    
+            <div id="main">
+                <button class="openbtn" onclick="toggleSidebar()"> ☰ </button>  
+            </div>
+
+            <div class="content-div">
+                <div id="custom-text2">
+                    <p>PC</p>
+                </div>
+                
+                <div class="contentbg">
+
+                <div id="custom-text">
+                    <p>CUSTOMIZED SYSTEM UNITS</p>
+                </div>
+
+                <div class="content1">
+                    <div id="c1-div">
+                        <img class="img" src="whitepc.jpg" alt="Product 1">
+                        <p>Customized White</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="greenpc.jpg" alt="Product 2">
+                        <p>Customized Green</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="violetpc.jpg" alt="Product 3">
+                        <p>Customized Violet</p>
+                    </div>
+                </div>
+                
+                <div id="custom-text">
+                    <p>MOTHERBOARD</p>
+                </div>
+
+                <div class="content1">
+                    <div id="c1-div">
+                        <img class="img" src="mb1.png" alt="Product 1">
+                        <p>GIGABYTE - B450M DS3H</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="mb2.png" alt="Product 2">
+                        <p>MSI - 970 Gaming</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="mb3.png" alt="Product 3">
+                        <p>ASROCK - Z790 Pro RS/D4</p>
+                    </div>
+                </div>
+
+                <div id="custom-text">
+                    <p>HARD DRIVE</p>
+                </div>
+
+                <div class="content1">
+                    <div id="c1-div">
+                        <img class="img" src="hdd1.png" alt="Product 1">
+                        <p>Seagate Barracuda</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="hdd2.png" alt="Product 2">
+                        <p>Seagate Firecuda</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="hdd3.png" alt="Product 3">
+                        <p>Seagate Ironwolf Pro</p>
+                    </div>
+                </div>
+
+                <div id="custom-text">
+                    <p>SOLID STATE DRIVE</p>
+                </div>
+
+                <div class="content1">
+                    <div id="c1-div">
+                        <img class="img" src="ssd1.webp" alt="Product 1">
+                        <p>Sandisk SSD Plus SATA</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="ssd2.png" alt="Product 2">
+                        <p>Crucial BX500</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="ssd3.png" alt="Product 3">
+                        <p>Kingston A400</p>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="footer-div">
+                <div id="logo">
+                    <img src="KAJI.png" alt="Logo" height="100" width="100">
+                </div>
+    
+                <p><em>Clive Owen S. Benito || clivebenito21@gmail.com || Kaji Corporations</em></p>
+            </div>
+    </body>
+    <script>
+        function toggleSidebar() {
+        var sidebar = document.getElementById('mySidebar');
+        if (sidebar.style.right === '0px' || sidebar.style.right === '') {
+            sidebar.style.right = '-200px';
+        } else {
+            sidebar.style.right = '0px';
+        }
+    }
+
+    function toggleSidebar() {
+        var sidebar = document.getElementById('mySidebar');
+        var isOpen = sidebar.classList.contains('show');
+
+        if (!isOpen) {
+            sidebar.classList.add('show');
+        } else {
+            sidebar.classList.remove('show');
+        }
+    }
+    </script>
+</html>

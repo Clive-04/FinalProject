@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="logotab.png" type="image/png">
+        <title>Kaji Store</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel = "stylesheet" href = "store.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div id="nav-div">
+            <ul>
+                <div id="logo-div">
+                    <a href="index.html"><img src="KAJI.png" alt="Logo" height="100" width="100"></a>
+                </div>
+                <li><a class="active" href="store.html">Store</a></li>
+                <li><a href="computer.html">PC</a></li>
+                <li><a href="console.html">Console</a></li>
+                <li><a href="peripherals.html">Peripherals</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="dropdown">
+                    <a href="#account" class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="login.html">Profile</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="login.html">Log In</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+    
+            <div class="sidebar" id="mySidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+                <a class="active" href="#home">MENU</a>
+                <a href="index.html">Home</a>
+                <a href="computer.html">PC</a>
+                <a href="console.html">Console</a>
+                <a href="peripherals.html">Peripherals</a>
+                <a href="services.html">Services</a>
+                <a href="support.html">Support</a>
+                <a href="about.html">About</a>
+            </div>
+    
+            <div id="main">
+                <button class="openbtn" onclick="toggleSidebar()"> ☰ </button>  
+            </div>
+
+            <div class="content">
+                <div id="text">
+                    <p>LIMITED ITEMS</p>
+                </div>
+                
+                <div class="content2">
+                    <div id="c1-div">
+                        <img src="su.jpg" class="img" alt="Product Image">
+                        <div class="details">
+                            <p>SYSTEM UNIT</p>
+                            <button class="price-button" onclick="togglePrice()">Show Price</button>
+                        </div>
+                    </div>
+
+                    <div id="c2-div">
+                        <img src="hp.jpg" class="img" alt="Product Image">
+                        <div class="details">
+                            <p>HEADSET</p>
+                            <button class="price-button2" onclick="togglePrice2()">Show Price</button>
+                        </div>
+                    </div>
+
+                    <div id="c3-div">
+                        <img src="gm.jpg" class="img" alt="Product Image">
+                        <div class="details">
+                            <p>MICE</p>
+                            <button class="price-button3" onclick="togglePrice3()">Show Price</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content2">
+                    <div id="c4-div">
+                        <img src="kb.jpg" class="img" alt="Product Image">
+                        <div class="details">
+                            <p>KEYBOARD</p>
+                            <button class="price-button4" onclick="togglePrice4()">Show Price</button>
+                        </div>
+                    </div>
+
+                    <div id="c5-div">
+                        <img src="mp.png" class="img" alt="Product Image">
+                        <div class="details">
+                            <p>MOUSEPAD</p>
+                            <button class="price-button5" onclick="togglePrice5()">Show Price</button>
+                        </div>
+                    </div>
+
+                    <div id="c6-div">
+                        <img src="ns.jpg" class="img" alt="Product Image">
+                        <div class="details">
+                            <p>CONSOLE</p>
+                            <button class="price-button6" onclick="togglePrice6()">Show Price</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-div">
+                <div id="logo">
+                    <img src="KAJI.png" alt="Logo" height="100" width="100">
+                </div>
+    
+                <p><em>Clive Owen S. Benito || clivebenito21@gmail.com || Kaji Corporations</em></p>
+            </div>
+    </body>
+    <script>
+        function toggleSidebar() {
+        var sidebar = document.getElementById('mySidebar');
+        if (sidebar.style.right === '0px' || sidebar.style.right === '') {
+            sidebar.style.right = '-200px';
+        } else {
+            sidebar.style.right = '0px';
+        }
+    }
+
+        function toggleSidebar() {
+        var sidebar = document.getElementById('mySidebar');
+        var isOpen = sidebar.classList.contains('show');
+
+        if (!isOpen) {
+            sidebar.classList.add('show');
+        } else {
+            sidebar.classList.remove('show');
+        }
+    }
+
+        function togglePrice() {
+            var buttonElement = document.querySelector('#c1-div .price-button');
+            var price = 'P40,000';
+    
+            if (buttonElement.textContent === 'Show Price') {
+                buttonElement.textContent = price; 
+            } else {
+                buttonElement.textContent = 'Show Price';
+            }
+        }
+
+        function togglePrice2() {
+            var buttonElement = document.querySelector('#c2-div .price-button2');
+            var price = 'P2,000';
+    
+            if (buttonElement.textContent === 'Show Price') {
+                buttonElement.textContent = price; 
+            } else {
+                buttonElement.textContent = 'Show Price';
+            }
+        }
+
+        function togglePrice3() {
+            var buttonElement = document.querySelector('#c3-div .price-button3');
+            var price = 'P1,500';
+    
+            if (buttonElement.textContent === 'Show Price') {
+                buttonElement.textContent = price; 
+            } else {
+                buttonElement.textContent = 'Show Price';
+            }
+        }
+
+        function togglePrice4() {
+            var buttonElement = document.querySelector('#c4-div .price-button4');
+            var price = 'P1,300';
+    
+            if (buttonElement.textContent === 'Show Price') {
+                buttonElement.textContent = price; 
+            } else {
+                buttonElement.textContent = 'Show Price';
+            }
+        }
+
+        function togglePrice5() {
+            var buttonElement = document.querySelector('#c5-div .price-button5');
+            var price = 'P800';
+    
+            if (buttonElement.textContent === 'Show Price') {
+                buttonElement.textContent = price; 
+            } else {
+                buttonElement.textContent = 'Show Price';
+            }
+        }
+
+        function togglePrice6() {
+            var buttonElement = document.querySelector('#c6-div .price-button6');
+            var price = 'P15,000';
+    
+            if (buttonElement.textContent === 'Show Price') {
+                buttonElement.textContent = price; 
+            } else {
+                buttonElement.textContent = 'Show Price';
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,506 @@
+body {
+    font-family: Arial;
+    background-color: rgb(27, 27, 27);
+}
+
+#nav-div {
+    border: 2px solid #333;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+#logo-div {
+    float: left;
+    padding-left: 5%;
+    padding-right: 10%;
+    width: 10%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #22323a;
+}
+  
+li {
+    position: relative;
+    float: left;
+}
+  
+li a {
+    font-family: Verdana;
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 40px 50px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+li a:visited {
+    color: white;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+    color: red;
+    text-decoration: none;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #3b5665;
+    min-width: 170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: white;
+    padding: 12px;
+    transition: 0.5s;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #333;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+  
+.dropdown:hover {
+    background-color: #111;
+}
+
+@media screen and (max-width: 1500px) {
+    #logo-div{
+        margin-right: 70px;
+    }
+
+    ul li {
+        display: none;
+    }
+    
+    ul li:nth-child(1),
+    ul li:nth-child(2),
+    ul li.dropdown {
+        display: block !important;
+    }
+
+    ul li.dropdown:hover .dropdown-content {
+        display: flex;
+    }
+
+    li a {
+        padding: 40px 30px;
+    }
+
+    .dropdown-content {
+        min-width: 130px;
+    }
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #284c5f;
+    border-radius: 10px 0px;
+    position: fixed;
+    z-index: 99;
+    height: 100%;
+    overflow-x: hidden;
+    transition: right 0.5s; 
+    top: 0;
+    right: -200px; 
+}
+
+.sidebar.show {
+    right: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar a.active {
+    background-color: rgb(212, 54, 54);
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: rgb(166, 22, 22);
+    color: white;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+.openbtn {
+    font-size: 25px;
+    margin-top: 10px;
+    position: absolute;
+    top: 23px;
+    right: 70px;
+    cursor: pointer;
+    background-color: #22323a;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    z-index: 1;
+}
+
+.openbtn:hover {
+    background-color: black;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+@media screen and (max-width: 900px) {
+    .sidebar {
+        display: block;
+    }
+}
+
+div.content {
+    height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        right: -200px;
+    }
+    .sidebar a {
+        float: none;
+        text-align: left;
+    }
+    div.content {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .openbtn {
+        right: 25px;
+    }
+}
+
+.content-div {
+    width: 100%;
+    margin-top: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: ease-in-out 0.3s;
+}
+
+.content1 {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    transition: ease-in-out 0.3s;
+}
+
+.contentbg {
+    padding-top: 2%;
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.contentbg2 {
+    position: relative;
+    padding-top: 2%;
+    margin-bottom: 20px;
+    text-align: center;
+    background-image: url('coins.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.contentbg2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+    z-index: 1;
+}
+
+.contentbg3 {
+    position: relative;
+    padding-top: 2%;
+    margin-bottom: 20px;
+    text-align: center;
+    background-image: url('id.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.contentbg3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+    z-index: 1;
+}
+
+.contentbg4 {
+    position: relative;
+    padding-top: 2%;
+    margin-bottom: 30px;
+    text-align: center;
+    background-image: url('vault.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.contentbg4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.60);
+    z-index: 1;
+}
+
+#custom-text3, #custom-text4 {
+    position: relative;
+    z-index: 2;
+}
+
+#custom-text {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+
+#custom-text p{
+    font-family: Verdana;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(192, 192, 192); 
+    max-width: 800px;
+}
+
+#custom-text2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+
+#custom-text2 p{
+    font-family: Impact;
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(199, 41, 41);
+    margin-bottom: 1%;
+    max-width: 800px;
+}
+
+#custom-text3 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+
+#custom-text3 p{
+    font-family: Impact;
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(179, 179, 179);
+    margin-bottom: 1%;
+    max-width: 800px;
+}
+
+#custom-text4 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1%;
+}
+
+#custom-text4 p{
+    font-family: Verdana;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(192, 192, 192);
+    max-width: 800px;
+}
+
+@media screen and (max-width: 900px) {
+    #custom-text p {
+        font-size: 1rem;
+    }
+
+    #custom-text2 p {
+        font-size: 2.5rem;
+    }
+
+    #custom-text3 p{
+        font-size: 2rem;
+    }
+
+    #custom-text4 p{
+        font-size: 1rem;
+    }
+
+    .content p {
+        font-size: 2rem;
+    }
+    
+    .text p {
+        font-size: 2rem; 
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #custom-text p {
+        font-size: 2rem;
+    }
+
+    #custom-text2 p {
+        font-size: 2.5rem;
+    }
+
+    #custom-text3 p{
+        font-size: 2rem;
+    }
+
+    #custom-text4 p{
+        font-size: 1rem;
+    }
+
+    .content p {
+        font-size: 2rem;
+    }
+    
+    .text p {
+        font-size: 2rem; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #custom-text p {
+        font-size: 1rem;
+    }
+
+    #custom-text2 p {
+        font-size: 2.5rem;
+    }
+
+    #custom-text3 p{
+        font-size: 2rem;
+    }
+
+    #custom-text4 p{
+        font-size: 1rem;
+    }
+
+    .content p {
+        font-size: 2rem; 
+    }
+    
+    .text p {
+        font-size: 2rem;
+    }
+}
+
+.footer-div {
+    position: relative;
+    margin-top: 0;
+    padding-right: 12%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: #333;
+    font-weight: bold;
+    color: rgb(213, 213, 213);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#logo {
+    float: left;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .content {
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-bottom: 20px;
+    }
+
+    .footer-div {
+        padding: 10px 2%;
+    }
+
+    .footer-div p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .footer-div {
+        padding-right: 0;
+    }
+
+    .footer-div p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-div {
+        padding-right: 0;
+    }
+    .footer-div p {
+        font-size: 1rem;
+    }
+}

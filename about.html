@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="logotab.png" type="image/png">
+        <title>About Kaji Corporations</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel = "stylesheet" href = "about.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div id="nav-div">
+            <ul>
+                <div id="logo-div">
+                    <a href="index.html"><img src="KAJI.png" alt="Logo" height="100" width="100"></a>
+                </div>
+                <li><a class="active" href="store.html">Store</a></li>
+                <li><a href="computer.html">PC</a></li>
+                <li><a href="console.html">Console</a></li>
+                <li><a href="peripherals.html">Peripherals</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="dropdown">
+                    <a href="#account" class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="login.html">Profile</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="login.html">Log In</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+    
+            <div class="sidebar" id="mySidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+                <a class="active" href="#home">MENU</a>
+                <a href="index.html">Home</a>
+                <a href="computer.html">PC</a>
+                <a href="console.html">Console</a>
+                <a href="peripherals.html">Peripherals</a>
+                <a href="services.html">Services</a>
+                <a href="support.html">Support</a>
+                <a href="about.html">About</a>
+            </div>
+    
+            <div id="main">
+                <button class="openbtn" onclick="toggleSidebar()"> ☰ </button>  
+            </div>
+
+            <div class="contentbg">
+                <div id="custom-text2">
+                    <p>ABOUT KAJI CORPORATIONS</p>
+                </div>
+
+                <div id="custom-text">
+                    <p>
+                        Kaji Corporation is a leading provider of top-tier gaming setups, consoles, and peripherals.
+                        Our mission is to deliver the ultimate gaming experience to enthusiasts around the world.
+                        From high-performance gaming PCs to cutting-edge consoles and accessories,
+                        we offer a wide range of products to meet the needs of every gamer.<br><br><br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="contentbg2">
+            </div>
+
+            <div class="contentbg3">
+                <div id="custom-text4">
+                    <p>
+                        Kaji Corporations' cutting-edge hardware includes top-tier gaming peripherals and high-performance gaming laptops.<br><br>
+
+                        Kaji Corporations' software platform, with over 200 million users, features Kaji Connect (an advanced
+                        networking platform), Kaji Chroma RGB (a proprietary RGB lighting technology system compatible
+                        with thousands of devices and numerous games/apps), and Kaji Stream (a powerful game streaming service).<br><br>
+                        
+                        Kaji Corporations also offers comprehensive payment solutions for gamers, youth, millennials, and
+                        Generation Z. Kaji Credits is one of the leading game payment services worldwide, while Kaji Paytech
+                        provides paytech solutions in emerging markets.<br><br>
+                        
+                        Founded in 2019, Kaji Corporations is headquartered in Manila (Philippines), with regional offices in
+                        Berlin, Singapore and Tokyo. With a presence in several key locations worldwide, Kaji Corporations
+                        is rapidly emerging as a prominent brand for gamers, establishing itself in North America, Asia-Pacific,<br>
+                        and Europe.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-div">
+                <div id="logo">
+                    <img src="KAJI.png" alt="Logo" height="100" width="100">
+                </div>
+    
+                <p><em>Clive Owen S. Benito || clivebenito21@gmail.com || Kaji Corporations</em></p>
+            </div>
+    </body>
+    <script>
+         function toggleSidebar() {
+        var sidebar = document.getElementById('mySidebar');
+        if (sidebar.style.right === '0px' || sidebar.style.right === '') {
+            sidebar.style.right = '-200px';
+        } else {
+            sidebar.style.right = '0px';
+        }
+    }
+
+        function toggleSidebar() {
+        var sidebar = document.getElementById('mySidebar');
+        var isOpen = sidebar.classList.contains('show');
+
+        if (!isOpen) {
+            sidebar.classList.add('show');
+        } else {
+            sidebar.classList.remove('show');
+        }
+    }
+    </script>
+</html>

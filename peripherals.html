@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="logotab.png" type="image/png">
+        <title>Kaji Peripherals</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel = "stylesheet" href = "peripherals.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div id="nav-div">
+            <ul>
+                <div id="logo-div">
+                    <a href="index.html"><img src="KAJI.png" alt="Logo" height="100" width="100"></a>
+                </div>
+                <li><a class="active" href="store.html">Store</a></li>
+                <li><a href="computer.html">PC</a></li>
+                <li><a href="console.html">Console</a></li>
+                <li><a href="peripherals.html">Peripherals</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="dropdown">
+                    <a href="#account" class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="login.html">Profile</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="login.html">Log In</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+    
+            <div class="sidebar" id="mySidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+                <a class="active" href="#home">MENU</a>
+                <a href="index.html">Home</a>
+                <a href="computer.html">PC</a>
+                <a href="console.html">Console</a>
+                <a href="peripherals.html">Peripherals</a>
+                <a href="services.html">Services</a>
+                <a href="support.html">Support</a>
+                <a href="about.html">About</a>
+            </div>
+    
+            <div id="main">
+                <button class="openbtn" onclick="toggleSidebar()"> ☰ </button>  
+            </div>
+
+            <div class="content-div">
+                <div id="custom-text2">
+                    <p>PERIPHERALS</p>
+                </div>
+
+                <div class="contentbg">
+
+                <div id="custom-text">
+                    <p>KEYBOARDS</p>
+                </div>
+
+                <div class="content1">
+                    <div id="c1-div">
+                        <img class="img" src="rk84.webp" alt="Product 1">
+                        <p>RK84 - 75% Wireless Mechanical</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="rk61.webp" alt="Product 2">
+                        <p>RK61 - 60% Wireless Mechanical</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="rk89.webp" alt="Product 3">
+                        <p>RK89 - 85% Wireless Mechanical</p>
+                    </div>
+                </div>
+                
+                <div id="custom-text">
+                    <p>MOUSE</p>
+                </div>
+
+                <div class="content1">
+                    <div id="c1-div">
+                        <img class="img" src="razer1.webp" alt="Product 1">
+                        <p>Razer Viper V3 Pro</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="razer2.webp" alt="Product 2">
+                        <p>Razer DeathAdder V3 Pro</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="razer3.webp" alt="Product 3">
+                        <p>Razer Viper Mini Signature Edition</p>
+                    </div>
+                </div>
+
+                <div id="custom-text">
+                    <p>HEADSET</p>
+                </div>
+
+                <div class="content1">
+                    <div id="c1-div">
+                        <img class="img" src="oni1.webp" alt="Product 1">
+                        <p>ONIKUMA K10 Pro</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="oni2.jpg" alt="Product 2">
+                        <p>ONIKUMA K5 Pro</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="oni3.webp" alt="Product 3">
+                        <p>ONIKUMA K19</p>
+                    </div>
+                </div>
+
+                <div id="custom-text">
+                    <p>MOUSEPAD</p>
+                </div>
+
+                <div class="content1">
+                    <div id="c1-div">
+                        <img class="img" src="mp1.webp" alt="Product 1">
+                        <p>SteelSeries QCK Small</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="mp3.png" alt="Product 2">
+                        <p>SteelSeries <br> QCK LARGE CALL OF DUTY: MODERN WARFARE</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="mp2.webp" alt="Product 3">
+                        <p>SteelSeries QCK Prism Cloth</p>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+
+            <div class="footer-div">
+                <div id="logo">
+                    <img src="KAJI.png" alt="Logo" height="100" width="100">
+                </div>
+    
+                <p><em>Clive Owen S. Benito || clivebenito21@gmail.com || Kaji Corporations</em></p>
+            </div>
+    </body>
+    <script>
+        function toggleSidebar() {
+        var sidebar = document.getElementById('mySidebar');
+        if (sidebar.style.right === '0px' || sidebar.style.right === '') {
+            sidebar.style.right = '-200px';
+        } else {
+            sidebar.style.right = '0px';
+        }
+    }
+
+        function toggleSidebar() {
+        var sidebar = document.getElementById('mySidebar');
+        var isOpen = sidebar.classList.contains('show');
+
+        if (!isOpen) {
+            sidebar.classList.add('show');
+        } else {
+            sidebar.classList.remove('show');
+        }
+    }
+    </script>
+</html>

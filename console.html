@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="logotab.png" type="image/png">
+        <title>Kaji Console</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel = "stylesheet" href = "console.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div id="nav-div">
+            <ul>
+                <div id="logo-div">
+                    <a href="index.html"><img src="KAJI.png" alt="Logo" height="100" width="100"></a>
+                </div>
+                <li><a class="active" href="store.html">Store</a></li>
+                <li><a href="computer.html">PC</a></li>
+                <li><a href="console.html">Console</a></li>
+                <li><a href="peripherals.html">Peripherals</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="dropdown">
+                    <a href="#account" class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
+                    <ul class="dropdown-content">
+                        <li><a href="login.html">Profile</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="login.html">Log In</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+    
+            <div class="sidebar" id="mySidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">×</a>
+                <a class="active" href="#home">MENU</a>
+                <a href="index.html">Home</a>
+                <a href="computer.html">PC</a>
+                <a href="console.html">Console</a>
+                <a href="peripherals.html">Peripherals</a>
+                <a href="services.html">Services</a>
+                <a href="support.html">Support</a>
+                <a href="about.html">About</a>
+            </div>
+    
+            <div id="main">
+                <button class="openbtn" onclick="toggleSidebar()"> ☰ </button>  
+            </div>
+
+            <div class="content-div">
+                <div id="custom-text2">
+                    <p>CONSOLES</p>
+                </div>
+
+                <div class="contentbg">
+                <div id="custom-text">
+                    <p>PLAYSTATION</p>
+                </div>
+
+                <div class="content1">
+                    <div id="c1-div">
+                        <img class="img" src="ps5.webp" alt="Product 1">
+                        <p>PlayStation 5</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="psportal.jpg" alt="Product 2">
+                        <p>PlayStation Portal</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="ps4.webp" alt="Product 3">
+                        <p>PlayStation 4</p>
+                    </div>
+                </div>
+                
+                <div id="custom-text">
+                    <p>X-BOX</p>
+                </div>
+
+                <div class="content1">
+                    <div id="c1-div">
+                        <img class="img" src="xbox1.jpg" alt="Product 1">
+                        <p>Xbox Series X</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="xboxs.jpg" alt="Product 2">
+                        <p>Xbox Series S</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="starter.jpg" alt="Product 3">
+                        <p>Xbox Series S - Starter Bundle</p>
+                    </div>
+                </div>
+
+                <div id="custom-text">
+                    <p>NINTENDO</p>
+                </div>
+
+                <div class="content1">
+                    <div id="c1-div">
+                        <img class="img" src="nin1.avif" alt="Product 1">
+                        <p>Nintendo Switch - OLED Model Neon Blue/Red Set</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="nin3.avif" alt="Product 2">
+                        <p>Nintendo Switch - Neon Blue/Red Joy-Con</p>
+                    </div>
+
+                    <div id="c1-div">
+                        <img class="img" src="nin2.avif" alt="Product 3">
+                        <p>Nintendo Switch - OLED Model White Set</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="footer-div">
+                <div id="logo">
+                    <img src="KAJI.png" alt="Logo" height="100" width="100">
+                </div>
+    
+                <p><em>Clive Owen S. Benito || clivebenito21@gmail.com || Kaji Corporations</em></p>
+            </div>
+    </body>
+    <script>
+        function toggleSidebar() {
+        var sidebar = document.getElementById('mySidebar');
+        if (sidebar.style.right === '0px' || sidebar.style.right === '') {
+            sidebar.style.right = '-200px';
+        } else {
+            sidebar.style.right = '0px';
+        }
+    }
+
+        function toggleSidebar() {
+        var sidebar = document.getElementById('mySidebar');
+        var isOpen = sidebar.classList.contains('show');
+
+        if (!isOpen) {
+            sidebar.classList.add('show');
+        } else {
+            sidebar.classList.remove('show');
+        }
+    }
+    </script>
+</html>
